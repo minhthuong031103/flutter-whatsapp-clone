@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">625045979992-6j2kk9cbnlnd6u632dsihldssfdrkvsm.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">625045979992</string>
+    <string name="google_api_key" translatable="false">AIzaSyCCRpHJ-bM9UTCRsf6rnCGuVL6lB_6B54g</string>
+    <string name="google_app_id" translatable="false">1:625045979992:android:84775810d47b2cbc925b2d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCCRpHJ-bM9UTCRsf6rnCGuVL6lB_6B54g</string>
+    <string name="google_storage_bucket" translatable="false">whatsapp-rivaan-144a3.appspot.com</string>
+    <string name="project_id" translatable="false">whatsapp-rivaan-144a3</string>
+</resources>

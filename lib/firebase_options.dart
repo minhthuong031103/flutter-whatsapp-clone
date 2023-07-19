@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,21 +46,31 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDHTCwR9XDS2jRlx_rWxUSqNMcufsAPitk',
+    appId: '1:625045979992:web:e0cbe6d3beec7663925b2d',
+    messagingSenderId: '625045979992',
+    projectId: 'whatsapp-rivaan-144a3',
+    authDomain: 'whatsapp-rivaan-144a3.firebaseapp.com',
+    storageBucket: 'whatsapp-rivaan-144a3.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB37aSzQwR_RJatCxy9F7V5hcxSvy1pWqc',
-    appId: '1:867907366273:android:03f3e5c37621ae01cf0c80',
-    messagingSenderId: '867907366273',
-    projectId: 'whatsapp-backend-c4d7f',
-    storageBucket: 'whatsapp-backend-c4d7f.appspot.com',
+    apiKey: 'AIzaSyCCRpHJ-bM9UTCRsf6rnCGuVL6lB_6B54g',
+    appId: '1:625045979992:android:84775810d47b2cbc925b2d',
+    messagingSenderId: '625045979992',
+    projectId: 'whatsapp-rivaan-144a3',
+    storageBucket: 'whatsapp-rivaan-144a3.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBSDWRP0gJNvfu50pTKYfUqRDDEkQsQrUI',
-    appId: '1:867907366273:ios:6f8cdf10bb49ba7ecf0c80',
-    messagingSenderId: '867907366273',
-    projectId: 'whatsapp-backend-c4d7f',
-    storageBucket: 'whatsapp-backend-c4d7f.appspot.com',
-    iosClientId: '867907366273-j9hk7oisbdk70t3q3ri6n5qveuj30ohh.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCZb6w13LIHPFrPvD-w5bCy5mb3A9QRoz8',
+    appId: '1:625045979992:ios:589ccf86bf50ae37925b2d',
+    messagingSenderId: '625045979992',
+    projectId: 'whatsapp-rivaan-144a3',
+    storageBucket: 'whatsapp-rivaan-144a3.appspot.com',
+    androidClientId: '625045979992-6f0ebbvldvmig9jq8gdlm0ov39alm51g.apps.googleusercontent.com',
+    iosClientId: '625045979992-o3l5evhbdt67ihludt99kedq0hdiaud4.apps.googleusercontent.com',
     iosBundleId: 'com.example.whatsappUi',
   );
 }
